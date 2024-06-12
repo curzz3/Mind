@@ -1,0 +1,100 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day",
+          "Sup"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ],
+        "entities":[]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Goodbye",
+          "See you later",
+          "Bye",
+          "Take care",
+          "Have a nice day",
+          "Later"
+        ],
+        "responses": [
+          "Goodbye Have a great day.",
+          "It was nice talking to you. See you soon!",
+          "Take care and see you later!"
+        ],
+        "entities":[]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thank you",
+          "Thanks",
+          "10q"
+        ],
+        "responses": [
+          "You're welcome How else can I assist you?",
+          "My pleasure What can I help you with next?",
+          "Don't hesitate to ask if you need further assistance."
+        ],
+        "entities":[]
+      },
+      {
+        "tag": "savemanga",
+        "patterns":[
+          "Save this for me https://test.com/, please",
+          "I want to store this for later https://t3stttt.org/",
+          "Add this to my bookstore https://7e5t.net/",
+          "I want to read this later https://73stov1ys4te.cc/",
+          "Keep this for me https://example1.com/, please",
+          "I'd like to bookmark this https://example2.net/",
+          "Remember to save this link https://example3.org/",
+          "Make sure to add this to my favorites https://example4.com/",
+          "Consider saving this page for later https://example5.info/",
+          "Would you mind storing this URL for me? https://example6.co.uk/",
+          "Think about adding this to my collection https://example7.de/",
+          "Don't forget to tag this for future reference https://example8.it/",
+          "Ensure you keep this handy for me https://example9.cn/",
+          "Let's remember to store this together https://example10.jp/"
+        ],
+        "responses": [
+          "Right away",
+          "Ok. Will do",
+          "Got it"
+        ],
+        "entities":[
+          {
+            "entity": "LINK",
+            "rangeFrom": 4,
+            "rangeTo": 5
+          },
+          {
+            "entity": "LINK",
+            "rangeFrom": 5,
+            "rangeTo": 6
+          },
+          {
+            "entity": "LINK",
+            "rangeFrom": 4,
+            "rangeTo": 5
+          },
+          {
+            "entity": "LINK",
+            "rangeFrom": 6,
+            "rangeTo": 7
+          }
+        ]
+      }
+    ]
+  }
